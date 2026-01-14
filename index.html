@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ג'יין גודול: החברה של הקופים - מצגת מאת מילי</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Heebo:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700;800&amp;family=Varela+Round&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5bee2b",
+                        "primary-dark": "#3da81a",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152210",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2c15",
+                        "text-main": "#131811",
+                        "text-muted": "#6b8961",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Heebo", "sans-serif"],
+                        "hebrew": ["Heebo", "sans-serif"],
+                        "rounded": ["Varela Round", "Heebo", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .slide {
+            display: none;
+            min-height: 100vh;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .progress-bar-fill {
+            transition: width 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#131811] dark:text-white font-display overflow-hidden h-screen w-full">
+    
+    <!-- Slide 1: Title Screen -->
+    <div class="slide active" id="slide-1">
+        <main class="flex-1 w-full relative flex flex-row overflow-hidden">
+            <div class="w-full lg:w-1/2 h-full flex flex-col justify-center items-center p-8 lg:p-16 relative z-10 bg-background-light dark:bg-background-dark">
+                <div class="mb-16 text-center">
+                    <h1 class="text-6xl lg:text-8xl font-black leading-[1.1] tracking-[-0.033em] text-[#131811] dark:text-white drop-shadow-sm">
+                        ג'יין גודול:<br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-bl from-primary to-green-600">החברה של הקופים</span>
+                    </h1>
+                </div>
+                <div class="flex flex-col items-center gap-6 animate-fade-in-up">
+                    <div class="relative group cursor-pointer">
+                        <div class="absolute inset-0 bg-primary/20 blur-2xl rounded-full group-hover:bg-primary/30 transition-all duration-500"></div>
+                        <div class="size-64 rounded-full bg-white dark:bg-[#1e2e19] border-[6px] border-primary shadow-2xl relative flex items-center justify-center overflow-hidden transform transition-transform duration-500 group-hover:scale-105">
+                            <img src="assets/images/milly.jpg" alt="מגישה: מילי" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div class="absolute bottom-2 right-4 bg-white dark:bg-[#2a3825] p-3 rounded-full shadow-lg border border-[#dee6db] dark:border-[#2a3825]">
+                            <span class="material-symbols-outlined text-2xl text-primary">star</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-[#131811] dark:text-white mb-1">מגישה: מילי</h2>
+                        <p class="text-[#6b8961] dark:text-[#a0cfa0] font-medium text-lg">פרויקט כיתה • גן חובה</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block w-1/2 h-full relative overflow-hidden bg-[#1e2e19]">
+                <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transform hover:scale-105 transition-transform duration-[20s] ease-linear" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxk0k-1VJcHEIPerj6gOV92GN9wnOV-FODvpXATAjTt1CeU92o13od-_QdI_FVNAcBW-C5iiTIeJu09RoR7OnNRvgcvturweYnIHaKPaB0PKa2_FqyWLFroLkMNCZcI0o1RRY9F6yBJQTjCahJ4maxpS_o-zBWVfQWKdjmtycWVv3FTml-fdhUsSlv2560IxhFag7Qpdf14t-SIgmig2ibua78GxX4sfdGZRO9h7xT5dXq_owaChmqlgXhyJP0QTX9HZA2wJPuQ_M");'>
+                    <div class="absolute inset-0 bg-black/10"></div>
+                </div>
+                <div class="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-background-light dark:from-background-dark via-background-light/50 to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute bottom-24 left-10 z-20 max-w-xs">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl text-white/90 shadow-xl">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="material-symbols-outlined text-primary">forest</span>
+                            <span class="font-bold text-sm">הג'ונגל של אפריקה</span>
+                        </div>
+                        <p class="text-xs opacity-80">כאן התחיל המסע המופלא של ג'יין עם השימפנזים</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <nav class="h-24 shrink-0 bg-white dark:bg-[#152210] border-t border-[#dee6db] dark:border-[#2a3825] flex items-center justify-between px-8 md:px-16 w-full relative z-30 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+            <button onclick="goToSlide(9)" class="flex items-center gap-3 px-6 py-3 rounded-full text-[#6b8961] dark:text-[#a0cfa0] font-bold text-xl hover:bg-[#f6f8f6] dark:hover:bg-[#1e2e19] transition-colors group disabled:opacity-50 disabled:cursor-not-allowed">
+                <span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                <span>חזרה</span>
+            </button>
+            <div class="flex gap-3">
+                <div class="h-2.5 w-10 rounded-full bg-primary shadow-lg shadow-primary/40"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+                <div class="h-2.5 w-2.5 rounded-full bg-[#dee6db] dark:bg-[#2a3825]"></div>
+            </div>
+            <button onclick="goToSlide(2)" class="flex items-center gap-3 px-8 py-4 rounded-full bg-primary text-[#131811] font-bold text-xl shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-1 transition-all group">
+                <span>הבא</span>
+                <span class="material-symbols-outlined text-3xl group-hover:-translate-x-1 transition-transform">arrow_back</span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Slide 2: Jane's Childhood -->
+    <div class="slide" id="slide-2">
+        <main class="flex-1 flex flex-col w-full h-full relative overflow-hidden">
+            <div class="flex-none w-full px-8 py-4 bg-background-light dark:bg-background-dark z-10">
+                <div class="flex flex-col gap-2 w-full max-w-lg mx-auto">
+                    <div class="flex justify-between items-end px-1">
+                        <span class="text-sm font-bold text-gray-500 dark:text-gray-400 font-display">Slide 2 of 9</span>
+                        <span class="text-base font-bold text-gray-700 dark:text-gray-300 font-hebrew" dir="rtl">הילדות של ג'יין</span>
+                    </div>
+                    <div class="h-3 w-full rounded-full bg-[#dee6db] dark:bg-[#2a3825] overflow-hidden">
+                        <div class="h-full rounded-full bg-primary progress-bar-fill" style="width: 22%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-grow flex w-full relative h-full">
+                <div class="w-1/2 h-full relative overflow-hidden bg-[#e8efe8] dark:bg-[#1f331b]">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[2s] ease-out hover:scale-105" data-alt="Soft nostalgic illustration of young Jane Goodall as a little girl holding a toy chimpanzee named Jubilee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKxJrcdilTFoz6VTi3Q11TsHtQFrmgUM3tGz9-VuyNl5fZDkH3uSUAcqZ1F0WUFThrzbTxknePyo8tbppFdtSomE69ZhBzOrPnxkXROsztxoJ99n6oO_6QlhIZMoe5F7xKTI-SJKpYS3h2TFAx25XSQ0DYnSd2hK1BRKyDPC1tqOgF1KL4etLTiRKf3xBXZVEodQWsSrTx0Coa4Y514um2Wh7PWATABN_48lpiGoK7XT1i6TS5G2q19U6Xmke5Fd9CQ7EWnt1QYcY');">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+                </div>
+                <div class="w-1/2 h-full flex flex-col items-center justify-center p-12 md:p-24 pb-36 relative z-10">
+                    <div class="absolute pointer-events-none inset-0 flex items-center justify-center overflow-hidden">
+                        <div class="w-[80%] h-[80%] bg-white dark:bg-[#1a2e16] rounded-full blur-3xl opacity-60 -z-10"></div>
+                    </div>
+                    <div class="relative z-20 text-center max-w-2xl">
+                        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-[#131811] dark:text-white drop-shadow-sm text-balance">
+                            כשהייתה קטנה, ג'יין אהבה חיות מאוד
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <nav class="fixed bottom-0 left-0 w-full h-24 bg-white/90 dark:bg-[#152210]/95 backdrop-blur-xl border-t border-gray-100 dark:border-white/5 flex items-center justify-between px-8 md:px-12 z-50">
+            <div class="flex items-center gap-4">
+                <button onclick="goToSlide(1)" aria-label="Home" class="flex items-center justify-center size-12 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-[#2a4524] text-[#131811] dark:text-white transition-colors cursor-pointer group">
+                    <span class="material-symbols-outlined text-[28px] group-hover:scale-110 transition-transform">home</span>
+                </button>
+                <button onclick="goToSlide(1)" aria-label="Previous Slide" class="flex items-center gap-2 pl-6 pr-4 py-3 rounded-full bg-transparent border-2 border-transparent hover:border-gray-200 dark:hover:border-[#2a4524] hover:bg-gray-50 dark:hover:bg-[#1a2e16] text-[#131811] dark:text-white font-bold text-lg transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined rtl:rotate-180 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    <span>הקודם</span>
+                </button>
+            </div>
+            <div class="flex-1 max-w-xl mx-8 flex items-center gap-4 group cursor-pointer">
+                <span class="text-sm font-bold text-gray-400 dark:text-gray-500 font-mono">2 / 9</span>
+                <div class="relative w-full h-2 bg-gray-200 dark:bg-[#2a4524] rounded-full overflow-visible">
+                    <div class="absolute right-0 top-0 h-full bg-primary rounded-full progress-bar-fill shadow-[0_0_10px_rgba(91,238,43,0.3)]" style="width: 22%"></div>
+                    <div class="absolute top-1/2 -translate-y-1/2 size-4 bg-white shadow-md border border-gray-100 rounded-full right-[22%] translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <button onclick="goToSlide(3)" aria-label="Next Slide" class="flex items-center gap-3 px-8 py-3 rounded-full bg-primary text-[#131811] font-bold text-xl shadow-lg shadow-primary/20 hover:bg-[#4cd922] hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer group">
+                    <span>הבא</span>
+                    <span class="material-symbols-outlined rtl:rotate-180 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Slide 3: The Big Journey -->
+    <div class="slide" id="slide-3">
+        <div class="relative flex h-screen w-full flex-col">
+            <header class="flex-none flex items-center justify-between border-b border-solid border-[#e5e8e5] dark:border-[#2a3825] px-6 py-4 bg-white/80 dark:bg-[#1a2c15]/80 backdrop-blur-sm z-50">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center size-10 rounded-full bg-primary/20 text-green-800 dark:text-green-200">
+                        <span class="material-symbols-outlined text-2xl">eco</span>
+                    </div>
+                    <h2 class="text-lg font-bold tracking-tight text-[#131811] dark:text-white">Jane Goodall: The Big Journey</h2>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="goToSlide(1)" class="flex items-center justify-center size-10 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                        <span class="material-symbols-outlined">home</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex-grow flex flex-col w-full h-full relative overflow-hidden">
+                <div class="flex-none w-full px-8 py-4 bg-background-light dark:bg-background-dark z-10">
+                    <div class="flex flex-col gap-2 w-full max-w-lg mx-auto">
+                        <div class="flex justify-between items-end px-1">
+                            <span class="text-sm font-bold text-gray-500 dark:text-gray-400 font-display">Slide 3 of 9</span>
+                            <span class="text-base font-bold text-gray-700 dark:text-gray-300 font-hebrew" dir="rtl">המסע מתחיל</span>
+                        </div>
+                        <div class="h-3 w-full rounded-full bg-[#dee6db] dark:bg-[#2a3825] overflow-hidden">
+                            <div class="h-full rounded-full bg-primary" style="width: 33%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-grow w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div class="relative w-full h-full bg-blue-100 overflow-hidden group">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] ease-linear group-hover:scale-110" data-alt="Illustration of a large toy-like ship sailing on a blue ocean" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCui3QUoLl-sxDmoI8jQH3O8f6Z2fpiTm2MLPIiMtG29dM3jpRAynH9LQw1c6RlZU9iz_OBZtM8cebg7JUjJelZ6jZE319Qs4gzJ23gFmYRSnK64IvIWxGKLJdpCC1R_yicsAP59f7UmiT6g7PBje8mRsMBP0XJEXe6ouyhYsL-ociElq-g7adKXU4otIXkZn7Lgj6OOVhZdObvG22ALV9npfgwsEUIlEu7VGEjACZlZkqukBgYitHZr5Ro7D-GT1EjSW6km9EWvoA');">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-black/5 to-transparent"></div>
+                        <div class="absolute bottom-8 right-8 lg:left-auto lg:right-12 w-64 md:w-80 aspect-square bg-white dark:bg-[#22361c] rounded-2xl shadow-2xl p-2 rotate-[-2deg] border-4 border-white dark:border-[#2a3825] z-10">
+                            <div class="w-full h-full bg-blue-50 dark:bg-[#152210] rounded-xl flex items-center justify-center relative overflow-hidden" data-alt="Simple colorful map showing a dotted path from UK to Africa">
+                                <div class="absolute top-4 left-4 size-6 bg-gray-300 rounded-full opacity-50"></div> 
+                                <div class="absolute bottom-4 right-4 size-20 bg-green-200 dark:bg-green-900 rounded-full opacity-50"></div> 
+                                <svg class="absolute inset-0 w-full h-full text-red-500" fill="none" stroke="currentColor" stroke-dasharray="6 6" stroke-width="4" viewBox="0 0 100 100">
+                                    <path d="M 25 25 Q 50 25 75 75" marker-end="url(#arrowhead)"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center lg:items-end text-center lg:text-right p-8 lg:p-20 bg-white dark:bg-[#1a2c15]">
+                        <div class="flex flex-col gap-8 max-w-xl w-full" dir="rtl">
+                            <h1 class="font-hebrew font-black text-5xl md:text-6xl lg:text-7xl text-[#131811] dark:text-white leading-[1.1] tracking-tight">
+                                היא נסעה רחוק רחוק,<br/>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-l from-green-600 to-primary">עד לאפריקה!</span>
+                            </h1>
+                            <div class="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
+                                <button class="group flex items-center gap-3 h-16 pl-6 pr-8 bg-primary text-[#131811] rounded-full hover:bg-[#4bd620] hover:scale-105 active:scale-95 transition-all shadow-xl shadow-green-500/20">
+                                    <div class="bg-white/30 rounded-full size-10 flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-2xl">volume_up</span>
+                                    </div>
+                                    <span class="font-bold text-xl font-hebrew">השמע קריינות</span>
+                                </button>
+                                <button class="flex items-center gap-2 h-16 px-8 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-700 dark:text-white rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition-colors">
+                                    <span class="material-symbols-outlined text-[#eab308] text-2xl">map</span>
+                                    <span class="font-bold text-xl font-hebrew">איפה אפריקה?</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="flex-none w-full bg-white dark:bg-[#1a2c15] border-t border-[#e5e8e5] dark:border-[#2a3825] p-4 pb-6 z-50">
+                <div class="layout-container max-w-7xl mx-auto flex items-center justify-between gap-4">
+                    <button onclick="goToSlide(2)" class="flex items-center gap-2 h-12 px-6 rounded-full bg-gray-100 dark:bg-white/10 text-gray-700 dark:text-white font-bold hover:bg-gray-200 dark:hover:bg-white/20 transition-colors group">
+                        <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                        <span class="hidden sm:inline">Back</span>
+                    </button>
+                    <div class="flex gap-2">
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-primary w-6"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                        <div class="size-2 rounded-full bg-gray-300 dark:bg-white/20"></div>
+                    </div>
+                    <button onclick="goToSlide(4)" class="flex items-center gap-2 h-14 px-8 rounded-full bg-primary text-[#131811] font-bold text-lg shadow-lg shadow-green-500/30 hover:bg-[#4bd620] hover:shadow-green-500/50 hover:-translate-y-1 transition-all group">
+                        <span class="hidden sm:inline">Next Slide</span>
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                </div>
+            </footer>
+            <svg style="display: none;">
+                <defs>
+                    <marker id="arrowhead" markerHeight="7" markerWidth="10" orient="auto" refX="9" refY="3.5">
+                        <polygon fill="#ef4444" points="0 0, 10 3.5, 0 7"></polygon>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Slide 4: Observing Quietly -->
+    <div class="slide" id="slide-4">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e0e6de] dark:border-b-[#2a3c24] px-10 py-4 bg-white/80 dark:bg-[#1a2c15]/80 backdrop-blur-md sticky top-0 z-50 h-[80px]">
+            <div class="flex items-center gap-4">
+                <div class="size-8 text-primary flex items-center justify-center bg-[#131811] rounded-full p-1.5">
+                    <span class="material-symbols-outlined text-[20px]">forest</span>
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">המסע של ג'יין</h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8 items-center">
+                <div class="hidden md:flex items-center gap-9">
+                    <a onclick="goToSlide(1)" class="text-sm font-medium leading-normal hover:text-primary transition-colors cursor-pointer">בית</a>
+                    <a class="text-sm font-medium leading-normal text-primary cursor-pointer">הסיפור</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors cursor-pointer">פעילויות</a>
+                </div>
+                <button onclick="goToSlide(1)" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary/20 hover:bg-primary/40 text-[#131811] dark:text-white transition-all text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="truncate">יציאה</span>
+                </button>
+            </div>
+        </header>
+        <main class="flex-grow flex flex-col md:flex-row relative w-full h-[calc(100vh-80px)]">
+            <div class="w-full md:w-1/2 h-full relative group overflow-hidden">
+                <div class="absolute inset-0 bg-black/10 z-10"></div>
+                <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Jane Goodall sitting quietly in tall grass using binoculars to watch nature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALR2vmkTgb5OBGsWQwwhLG7TViJYaDE0yHXYOFF3R2rTBK531L8V0FdRiBsjxtVMWoJXirRZXbY5ZQbM_KJfl9K5BYhIePDENkGVp1YncKU9fvGHdVori6DKc3NDAh7nGsx1NMjbLd8SRaE5X7JH42aptsp_-944OEIswWZxFRd-b3j66hbdXLLXcJJlz3cvaZJ8ocoEWhSLl30qHTxXzNv50kGJAHeQBb09lWR6RtneOZJukH1Xxo2x2MlMQOvBYZnwZUH2Ygi8E');">
+                </div>
+                <div class="absolute top-8 right-8 z-20 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-5 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                    <span class="material-symbols-outlined text-primary text-base">visibility</span>
+                    <span class="text-sm font-bold uppercase tracking-wider text-[#131811] dark:text-white">תצפית</span>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 h-full relative flex flex-col justify-center items-center p-8 md:p-16 lg:p-24 bg-[#f4f9f3] dark:bg-[#152210]">
+                <div class="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+                <span class="material-symbols-outlined absolute top-12 left-12 text-primary/10 text-8xl rotate-12 select-none -z-10">eco</span>
+                <div class="flex flex-col gap-8 max-w-2xl w-full">
+                    <div class="inline-flex self-start items-center justify-center size-16 rounded-full bg-white dark:bg-[#1c2e18] shadow-sm text-primary mb-2 border border-primary/20">
+                        <span class="material-symbols-outlined text-3xl">eyeglasses</span>
+                    </div>
+                    <h1 class="hebrew-text text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-[#131811] dark:text-white drop-shadow-sm">
+                        במשך המון זמן,<br/>
+                        <span class="text-[#355e3b] dark:text-[#5bee2b] bg-clip-text">היא רק ישבה והסתכלה</span>
+                    </h1>
+                </div>
+            </div>
+        </main>
+        <div class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-[#1a2c15]/95 backdrop-blur-lg border-t border-[#e0e6de] dark:border-[#2a3c24] px-8 py-5 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex-1 w-full max-w-md flex flex-col gap-2">
+                    <div class="flex justify-between text-xs font-bold text-[#6b8961] dark:text-[#8ba881] tracking-wide">
+                        <span>התחלה</span>
+                        <span>שקופית 4 מתוך 9</span>
+                        <span>סיום</span>
+                    </div>
+                    <div class="h-3 w-full bg-[#dee6db] dark:bg-[#2a3c24] rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full relative shadow-[0_0_10px_rgba(91,238,43,0.5)]" style="width: 44%;">
+                            <div class="absolute right-0 top-0 bottom-0 w-1 bg-white/30"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 ltr:flex-row-reverse">
+                    <button onclick="goToSlide(3)" class="group flex items-center justify-center size-12 rounded-full bg-transparent border-2 border-[#e0e6de] dark:border-[#2a3c24] hover:border-primary text-[#131811] dark:text-white hover:bg-white dark:hover:bg-[#2a3c24] transition-all">
+                        <span class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">arrow_forward</span>
+                        <span class="sr-only">Previous Slide</span>
+                    </button>
+                    <button onclick="goToSlide(5)" class="group flex items-center justify-center h-12 px-8 rounded-full bg-primary text-[#131811] shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:bg-[#4cd622] transition-all transform hover:-translate-y-1 font-bold text-lg gap-2">
+                        <span>הבא</span>
+                        <span class="material-symbols-outlined text-2xl group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Building Trust -->
+    <div class="slide" id="slide-5">
+        <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+            <div class="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-primary/10 blur-[120px]"></div>
+            <div class="absolute bottom-[10%] right-[10%] w-[25vw] h-[25vw] rounded-full bg-primary/5 blur-[100px]"></div>
+        </div>
+        <main class="relative z-10 w-full h-full flex flex-col lg:flex-row">
+            <div class="relative w-full lg:w-1/2 h-[45vh] lg:h-full shrink-0 group overflow-hidden bg-slate-200 dark:bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[2s] group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASUUTrnbg4XS7SqJGLFi1i1v0kDC6oDcZjSr4BzIGHYypvZb36U_qw4fG-0rb1hYSKZ54FR8Yvz2T4dSMSi4wxMcBtuI9GvutW9wrGrR4cJIGqvp3HWmAH1biXAbUmB5djkyT5--hl0WvW7HXtjvdKbJ4-52Uhgok9iwSkqwyWh9CxGVlUiDhmmCz2Y057NohiVSpo4HT2UV7vutlHpCYavpQyRIsCIYzcbn9dbhgM6A1vagZ6jM5TanJNtKLiylcgjAaKza_JAcU');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent lg:to-background-light/5"></div>
+                </div>
+                <button class="absolute bottom-6 right-6 lg:bottom-12 lg:right-12 size-16 lg:size-24 bg-primary text-slate-900 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.2)] flex items-center justify-center hover:scale-110 hover:-rotate-6 transition-all duration-300 cursor-pointer border-4 border-white dark:border-[#1a2c15] z-20">
+                    <span class="material-symbols-outlined text-4xl lg:text-5xl">volume_up</span>
+                </button>
+            </div>
+            <div class="relative w-full lg:w-1/2 h-full flex flex-col bg-white/40 dark:bg-[#1a2c15]/40 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none">
+                <header class="absolute top-0 right-0 left-0 p-6 lg:p-10 flex justify-between items-start z-30">
+                    <div class="flex items-center gap-3">
+                        <button onclick="goToSlide(1)" class="size-10 lg:size-12 rounded-full bg-white dark:bg-[#1a2c15] flex items-center justify-center text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors shadow-sm border border-slate-100 dark:border-slate-700/50">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-end gap-2">
+                        <div class="flex items-center gap-2 bg-white/80 dark:bg-black/40 px-3 py-1.5 rounded-full backdrop-blur-sm border border-white/50 dark:border-white/5">
+                            <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Slide 5 / 9</span>
+                        </div>
+                        <div class="w-32 h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden mt-1">
+                            <div class="h-full bg-primary rounded-full w-[55%]"></div>
+                        </div>
+                    </div>
+                </header>
+                <div class="flex-1 flex flex-col justify-center items-center lg:items-end text-center lg:text-right px-6 lg:px-16 pb-24 pt-10">
+                    <span class="material-symbols-outlined text-6xl text-primary/30 mb-4 rotate-180 hidden lg:block">format_quote</span>
+                    <h1 class="font-hebrew font-black text-4xl sm:text-5xl lg:text-[5rem] lg:leading-[1.1] text-slate-900 dark:text-white mb-6 drop-shadow-sm" dir="rtl">
+                        הקופים הבינו<br class="hidden lg:block"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600">שהיא חברה טובה</span>
+                    </h1>
+                    <div class="w-20 h-2 bg-primary/40 rounded-full my-4 lg:ml-auto lg:mr-0"></div>
+                    <p class="font-display text-lg lg:text-2xl text-slate-500 dark:text-slate-300 font-medium max-w-lg leading-relaxed mb-8">
+                        The monkeys realized she was a good friend.
+                    </p>
+                    <div class="hidden lg:flex items-center gap-3 text-slate-400 font-bold text-sm tracking-[0.2em] uppercase animate-pulse">
+                        <span>Listen to story</span>
+                        <span class="material-symbols-outlined">arrow_back</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="fixed bottom-0 left-0 w-full z-50 pointer-events-none">
+            <div class="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-background-light via-background-light/90 to-transparent dark:from-background-dark dark:via-background-dark/90 dark:to-transparent"></div>
+            <div class="relative w-full max-w-[1600px] mx-auto px-6 lg:px-12 pb-6 lg:pb-8 flex justify-between items-end pointer-events-auto">
+                <button onclick="goToSlide(4)" class="group flex h-12 lg:h-14 px-6 rounded-full bg-white dark:bg-[#1a2c15] border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all items-center gap-2 shadow-lg hover:shadow-xl">
+                    <span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                    <span class="hidden sm:inline">Previous</span>
+                </button>
+                <button onclick="goToSlide(6)" class="group h-16 lg:h-20 px-8 lg:px-12 rounded-full bg-primary text-slate-900 font-hebrew font-black text-xl lg:text-2xl hover:bg-[#4cd621] hover:scale-105 transition-all shadow-xl shadow-primary/20 hover:shadow-primary/40 flex items-center gap-4">
+                    <span class="mt-1">הבא</span> 
+                    <span class="material-symbols-outlined text-3xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Smart Chimps -->
+    <div class="slide" id="slide-6">
+        <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="fixed bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-primary/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <header class="fixed top-0 w-full z-50 flex items-center justify-between whitespace-nowrap px-6 py-4 lg:px-10">
+            <div class="flex items-center gap-4 text-[#131811] dark:text-white bg-white/50 dark:bg-black/20 backdrop-blur-sm p-2 rounded-full pr-3 border border-white/20">
+                <div class="flex items-center justify-center size-10 rounded-full bg-primary text-primary-dark shadow-lg shadow-primary/20">
+                    <span class="material-symbols-outlined text-2xl">eco</span>
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">ג'יין גודול: חוקרת הטבע</h2>
+            </div>
+            <button onclick="goToSlide(1)" class="flex items-center justify-center overflow-hidden rounded-full h-10 bg-white dark:bg-[#1a2c15] shadow-sm text-[#131811] dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors border border-gray-100 dark:border-gray-700">
+                <span class="hidden sm:inline">תפריט ראשי</span>
+                <span class="material-symbols-outlined">home</span>
+            </button>
+        </header>
+        <main class="flex-1 flex flex-col md:flex-row w-full h-full pt-20 pb-24 px-4 md:px-8 gap-6 md:gap-12 items-center relative z-10">
+            <div class="w-full md:w-1/2 h-[40vh] md:h-full pb-0 md:pb-6 pt-0 md:pt-4">
+                <div class="relative w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white dark:border-surface-dark group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+                    <div aria-label="Chimpanzee using a stick to fish for termites" class="w-full h-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" role="img" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBypYp7DUO_i35kOiEsKCEOceRQtkvR6XTSaFHjGtxqoML9L8anUpefPehdZ0i__feJBQPXDGwA1TrkvbXGq2x9jUJVhFHrcV1136glm_9NOwDQeZCnq9tyrZvD67y_N02qtp_cKmlRiTKDnA5KLjkxNk50igKQIYJScrW_ikyJoX_XTvJRS6XPA_e60Ms2hQ7EyyH9anrUNslkJN9XlmzJ4UKHKV9U0CoONQDlTiQo01zczFTUvwnG9Mpn9BmJ40LUpEETbDY2Ujo");'>
+                    </div>
+                    <div class="absolute top-6 right-6 z-20 bg-white/90 dark:bg-[#1a2c15]/90 backdrop-blur text-[#131811] dark:text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+                        <span class="font-bold text-sm">חכמים מאוד!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-right">
+                <div class="inline-flex items-center gap-2 mb-6 animate-bounce">
+                    <span class="px-4 py-2 rounded-full bg-primary/20 text-green-900 dark:text-green-100 text-sm font-extrabold border border-primary/20">
+                        עובדה מדהימה #6
+                    </span>
+                </div>
+                <h1 class="text-[#131811] dark:text-white text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight drop-shadow-sm">
+                    היא גילתה שהם <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600 inline-block transform hover:scale-105 transition-transform duration-300 cursor-default">חכמים</span> 
+                    ומשתמשים 
+                    <span class="relative inline-block whitespace-nowrap">
+                        <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600 inline-block transform hover:rotate-3 transition-transform duration-300 cursor-default">בכלים</span>
+                        <span class="absolute bottom-2 left-0 w-full h-3 bg-primary/20 -z-10 rounded-full"></span>
+                    </span>
+                </h1>
+                <p class="mt-8 text-xl md:text-2xl text-[#6b8961] dark:text-gray-400 font-medium max-w-lg leading-relaxed">
+                    ג'יין ראתה שימפנזה מכין "חכה" מענף כדי לדוג טרמיטים טעימים!
+                </p>
+            </div>
+        </main>
+        <footer class="fixed bottom-0 left-0 w-full h-20 md:h-24 bg-white dark:bg-[#1a2c15] border-t border-gray-100 dark:border-gray-800 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] z-50 px-6 lg:px-12 flex items-center justify-between">
+            <button onclick="goToSlide(5)" class="group flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-gray-50 dark:bg-gray-800 text-[#131811] dark:text-white font-bold hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95">
+                <span class="material-symbols-outlined text-2xl group-hover:-translate-x-1 transition-transform">arrow_forward</span>
+                <span class="text-lg hidden md:inline">הקודם</span>
+            </button>
+            <div class="flex flex-col items-center gap-1 flex-1 px-4 md:px-12 max-w-xl">
+                        <span class="text-xs font-bold text-[#6b8961] uppercase tracking-wider">התקדמות</span>
+                <div class="h-3 w-full rounded-full bg-gray-100 dark:bg-gray-700 overflow-hidden">
+                    <div class="h-full rounded-full bg-primary shadow-[0_0_10px_rgba(91,238,43,0.5)] transition-all duration-500 ease-out" style="width: 66%;"></div>
+                </div>
+            </div>
+            <button onclick="goToSlide(7)" class="group flex items-center justify-center gap-3 px-8 py-3 rounded-full bg-primary text-green-950 font-black shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-105 active:scale-95 transition-all">
+                <span class="text-xl">הבא</span>
+                <span class="material-symbols-outlined text-2xl group-hover:translate-x-1 transition-transform">arrow_back</span>
+            </button>
+        </footer>
+    </div>
+
+    <!-- Slide 7: Feelings and Family -->
+    <div class="slide" id="slide-7">
+        <main class="flex-grow relative h-[calc(100vh-90px)] flex items-center justify-center overflow-hidden">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-gray-200/50 dark:border-gray-700/30 rounded-full -z-20"></div>
+            <div class="container mx-auto px-6 md:px-10 lg:px-20 h-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full">
+                    <div class="flex flex-col justify-center order-1 text-center lg:text-right z-10 animate-[slideInRight_0.6s_ease-out]">
+                        <div class="mb-6 flex justify-center lg:justify-start">
+                            <div class="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-full text-yellow-600 dark:text-yellow-400 inline-flex">
+                                <span class="material-symbols-outlined text-4xl">stars</span>
+                            </div>
+                        </div>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight tracking-tight font-hebrew text-[#131811] dark:text-white drop-shadow-sm">
+                            ג'יין הפכה ל<span class="text-primary relative inline-block mx-2">
+                                מפורסמת
+                                <svg class="absolute w-full h-4 -bottom-2 right-0 text-primary opacity-60" preserveAspectRatio="none" viewBox="0 0 100 10">
+                                    <path d="M0 5 Q 50 15 100 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+                                </svg>
+                            </span>
+                            <br class="hidden lg:block my-2"/>
+                            ועזרה להציל את הקופים
+                        </h1>
+                    </div>
+                    <div class="flex items-center justify-center order-2 relative h-full max-h-[600px] animate-[fadeIn_0.8s_ease-out]">
+                        <div class="relative w-full max-w-[500px] aspect-square group">
+                            <div class="absolute inset-[-20px] border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-full animate-[spin_60s_linear_infinite]"></div>
+                            <div class="absolute inset-0 bg-blue-100 dark:bg-[#1a2c38] rounded-full shadow-2xl overflow-hidden border-8 border-white dark:border-[#2a3825] transition-transform duration-700 group-hover:scale-[1.02]">
+                                <div class="absolute top-[15%] right-[10%] w-[35%] h-[25%] bg-[#c6e6bc] dark:bg-[#344e2e] rounded-full blur-md opacity-80"></div> 
+                                <div class="absolute top-[45%] right-[25%] w-[30%] h-[35%] bg-[#bfeec4] dark:bg-[#2d4628] rounded-full blur-md opacity-80"></div> 
+                                <div class="absolute bottom-[20%] left-[15%] w-[25%] h-[30%] bg-[#c6e6bc] dark:bg-[#344e2e] rounded-full blur-md opacity-80"></div> 
+                                <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(currentColor 1px, transparent 1px); background-size: 40px 40px;"></div>
+                                <div class="absolute top-[40%] right-[35%] animate-bounce cursor-pointer hover:scale-110 transition-transform">
+                                    <div class="bg-white dark:bg-[#25361e] p-2 rounded-full shadow-lg text-primary border border-gray-100 dark:border-gray-600">
+                                        <span class="material-symbols-outlined text-3xl">emoji_nature</span>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-[30%] left-[25%] animate-[bounce_3s_infinite_1s] cursor-pointer hover:scale-110 transition-transform">
+                                    <div class="bg-white dark:bg-[#25361e] p-2 rounded-full shadow-lg text-primary border border-gray-100 dark:border-gray-600">
+                                        <span class="material-symbols-outlined text-3xl">pets</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-[25%] left-[20%] animate-[bounce_4s_infinite_0.5s] cursor-pointer hover:scale-110 transition-transform">
+                                    <div class="bg-white dark:bg-[#25361e] p-2 rounded-full shadow-lg text-primary border border-gray-100 dark:border-gray-600">
+                                        <span class="material-symbols-outlined text-3xl">forest</span>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-8 right-8 bg-white/95 dark:bg-[#25361e]/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-600 max-w-[180px] animate-[slideUp_1s_ease-out]">
+                                    <div class="flex items-center gap-3">
+                                        <div class="bg-yellow-100 p-2 rounded-full text-yellow-600">
+                                            <span class="material-symbols-outlined text-xl">record_voice_over</span>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs font-bold text-gray-500 dark:text-gray-300 font-hebrew">ג'יין מספרת לכולם</p>
+                                            <p class="text-sm font-bold text-[#131811] dark:text-white font-hebrew">חשוב לשמור על הטבע</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-6 right-10 bg-white dark:bg-[#25361e] px-4 py-2 rounded-full shadow-lg border border-gray-100 dark:border-gray-700 animate-pulse flex items-center gap-2">
+                                <span class="material-symbols-outlined text-red-500 fill-1">favorite</span>
+                                <span class="font-bold text-sm font-hebrew">כל העולם מקשיב</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <nav class="fixed bottom-0 w-full z-50 h-[90px] bg-white dark:bg-background-dark border-t border-[#e1e6e0] dark:border-[#2a3825] shadow-[0_-5px_20px_rgba(0,0,0,0.05)] px-6 md:px-10 lg:px-20">
+            <div class="h-full flex items-center justify-between">
+                <div class="flex items-center gap-4 md:gap-6">
+                    <div class="size-12 bg-primary/20 rounded-full flex items-center justify-center text-primary dark:text-[#5bee2b]">
+                        <span class="material-symbols-outlined text-2xl">eco</span>
+                    </div>
+                    <div class="hidden sm:flex flex-col">
+                        <span class="text-xs font-bold text-gray-400 font-hebrew uppercase tracking-wide">מצגת ג'יין גודול</span>
+                        <span class="text-lg font-bold text-[#131811] dark:text-white font-hebrew">מפורסמת ושומרת</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex flex-col items-center gap-2 w-1/3">
+                    <div class="flex justify-between w-full px-1">
+                        <span class="text-xs font-bold text-gray-400 font-hebrew">התקדמות</span>
+                        <span class="text-xs font-bold text-primary font-hebrew">שקופית 7 מתוך 9</span>
+                    </div>
+                    <div class="h-2 w-full bg-[#dee6db] dark:bg-[#2a3825] rounded-full overflow-hidden">
+                        <div class="h-full bg-primary rounded-full transition-all duration-1000 ease-out" style="width: 77%"></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 md:gap-4">
+                    <button onclick="goToSlide(6)" aria-label="Previous slide" class="size-12 rounded-full border border-gray-200 dark:border-gray-700 bg-transparent hover:bg-gray-50 dark:hover:bg-[#2f4228] flex items-center justify-center text-gray-500 transition-colors">
+                        <span class="material-symbols-outlined rotate-180 text-xl">arrow_forward</span>
+                    </button>
+                    <button onclick="goToSlide(8)" class="h-12 md:h-14 px-6 md:px-8 rounded-full bg-primary hover:bg-[#4cd621] text-[#131811] font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all flex items-center gap-3 font-hebrew group">
+                        <span class="text-base md:text-lg">הבא</span>
+                        <span class="material-symbols-outlined rotate-180 text-xl group-hover:translate-x-1 transition-transform">arrow_back</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Slide 8: Protecting Nature -->
+    <div class="slide" id="slide-8">
+        <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+            <header class="flex items-center justify-between whitespace-nowrap px-6 py-4 md:px-10 border-b border-transparent z-30">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center size-10 rounded-full bg-primary/20 text-primary-dark">
+                        <span class="material-symbols-outlined text-primary text-[24px]">eco</span>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Jane Goodall</h2>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="goToSlide(1)" class="flex items-center justify-center rounded-full h-10 w-10 bg-white dark:bg-white/10 text-inherit hover:bg-gray-100 dark:hover:bg-white/20 transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">home</span>
+                    </button>
+                    <button class="flex items-center justify-center rounded-full h-10 w-10 bg-white dark:bg-white/10 text-inherit hover:bg-gray-100 dark:hover:bg-white/20 transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">menu</span>
+                    </button>
+                </div>
+            </header>
+            <div class="flex-1 flex flex-col items-center justify-center px-4 py-6 md:px-10 md:py-8 relative pb-24">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[80%] bg-primary/5 dark:bg-primary/10 rounded-[50%] blur-3xl -z-10 pointer-events-none"></div>
+                <div class="w-full max-w-[1280px] flex flex-col gap-6 md:gap-10 h-full justify-center">
+                    <div class="bg-white dark:bg-white/5 rounded-xl md:rounded-[2.5rem] shadow-sm overflow-hidden flex flex-col md:flex-row-reverse min-h-[65vh] shadow-xl shadow-black/5">
+                        <div class="relative w-full md:w-1/2 h-64 md:h-auto overflow-hidden group">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform hover:scale-105 duration-1000 ease-out" data-alt="Peaceful illustration of an elderly Jane surrounded by nature and animals" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDj8ROxV0Fv2xsbv8vaLqrx96dvW_rfzVqPGGMPJyL_M_9EeMso2Lf6a3RQUJvPim320_OW80_zHyYfVmNmjoBJoWyD4NofXEQncy9pqHKcz57zbV3PC3FIyq4RqAmIC84gxDtY5vv9O1v5ApPkyQ4BWeBzyj9RyOQdwjsmcT8RcsGoVbIECKeMuqY0mC1wvSDeKtOBhiJYE57dz-WOIydDBbslv0QjcMGdI2QeFpdlNEqqYqNCHEgv0uKFATg4ZfHoq8hRKijzigc");'>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-gradient-to-l md:from-transparent md:to-black/20"></div>
+                            <div class="absolute top-4 right-4">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md text-xs font-bold shadow-sm">
+                                    <span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+                                    <span>Legacy</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center p-6 md:p-12 md:w-1/2 text-center md:text-right">
+                            <div class="flex flex-col gap-6 md:items-end w-full">
+                                <div class="flex justify-center md:justify-end mb-2 w-full">
+                                    <span class="text-xs font-bold tracking-widest text-gray-500 dark:text-gray-400 uppercase">Slide 8 of 9</span>
+                                </div>
+                                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.2] tracking-tight text-[#131811] dark:text-white max-w-2xl" dir="rtl">
+                                    ג'יין נפטרה בגיל 91 אחרי חיים מלאים בטוב
+                                </h1>
+                                <p class="text-xl font-medium text-gray-600 dark:text-gray-300 max-w-xl" dir="ltr">
+                                    Jane passed away at age 91 after a life full of good
+                                </p>
+                                <div class="w-24 h-1.5 bg-primary rounded-full mx-auto md:mr-0 md:ml-auto mt-6 mb-8"></div>
+                                <div class="flex flex-col items-center md:items-end gap-4 w-full">
+                                    <button onclick="goToSlide(9)" class="group flex min-w-[180px] cursor-pointer items-center justify-between overflow-hidden rounded-full h-16 px-1 pl-8 bg-primary hover:bg-[#4dd622] transition-colors text-[#131811] shadow-xl shadow-primary/20">
+                                        <span class="text-lg font-bold leading-normal tracking-[0.015em] mr-2">Next Slide</span>
+                                        <div class="flex items-center justify-center size-14 bg-white/30 rounded-full group-hover:bg-white/50 transition-colors">
+                                            <span class="material-symbols-outlined text-[28px] font-bold">arrow_forward</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-6 left-0 right-0 flex justify-center items-center gap-3 py-2 z-10 pointer-events-auto">
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                    <div class="w-10 h-2.5 rounded-full bg-primary shadow-lg shadow-primary/30"></div>
+                    <div class="size-2.5 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors hover:bg-primary/50 cursor-pointer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Final Message -->
+    <div class="slide" id="slide-9">
+        <div class="relative flex h-screen w-full flex-row overflow-hidden">
+            <div class="w-1/2 h-full relative bg-white dark:bg-[#131811] flex flex-col justify-center p-12 lg:p-24 z-10 pb-32">
+                <div class="absolute top-20 right-20 text-primary/10 animate-pulse">
+                    <span class="material-symbols-outlined text-8xl">eco</span>
+                </div>
+                <div class="relative z-10 max-w-2xl">
+                    <div class="inline-flex items-center gap-2 mb-8 bg-primary/10 px-4 py-2 rounded-full text-primary-dark dark:text-primary w-fit border border-primary/20">
+                        <span class="material-symbols-outlined text-xl">verified</span>
+                        <span class="text-sm font-bold uppercase tracking-wider">סיום הסיפור</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black text-[#131811] dark:text-white leading-[1.1] mb-6 tracking-tight">
+                        גם <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600">אנחנו</span> <br/>
+                        יכולים לשמור <br/>
+                        על הטבע!
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-lg">
+                        כל אחד מאיתנו יכול לעזור לחיות ולעולם להיות מקום טוב יותר.
+                    </p>
+                </div>
+            </div>
+            <div class="w-1/2 h-full relative bg-[#ecfce6] dark:bg-[#25381e] flex items-center justify-center overflow-hidden pb-24">
+                <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 mix-blend-multiply dark:mix-blend-overlay"></div>
+                <div class="absolute top-1/3 left-1/3 w-96 h-96 bg-primary/30 rounded-full blur-[100px]"></div>
+                <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-green-400/20 rounded-full blur-[80px]"></div>
+                <div class="relative w-[75%] aspect-[4/5] max-w-xl rounded-[3rem] overflow-hidden border-[12px] border-white dark:border-[#1a2815]/50 shadow-2xl transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-110" data-alt="Illustration of a child planting a tree or happy children in nature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNytbE-TWH31A6GNRolavHno0ItW6NVomg99YHp5he9yVpGlyrEcELilj9dRUVTQfDeoNDkGD347WgsBRkU4lrpxxoacf_KxJVqnFFI14Njm6Erx8M8uZdujPZVsydpyOTx-EGT0vp8zbQ9SLGcQfFMQ1iZ4X6F-hF66_JY4iQ7ptajQkm4XtnlyhRwBJSZS_Xx5U7lLo_JLPNhDpdp7u173sDdQjagAmns4gOzxR-zXXvGPPnmgRPhq6FnPROezckWsGyacKG_DQ');">
+                    </div>
+                    <div class="absolute bottom-8 right-8 left-8 bg-white/95 dark:bg-[#1a2815]/95 backdrop-blur-xl p-6 rounded-3xl shadow-lg border border-white/20">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary/20 p-3 rounded-2xl text-primary-dark dark:text-primary">
+                                <span class="material-symbols-outlined text-3xl">emoji_nature</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">העתיד בידיים שלנו</h3>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">ביחד נשמור על כדור הארץ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed bottom-0 left-0 w-full h-24 bg-white dark:bg-[#131811] border-t border-[#e5e9e4] dark:border-[#2a3824] z-50 flex items-center justify-between px-8 lg:px-12 shadow-[0_-10px_60px_-15px_rgba(0,0,0,0.1)]">
+                <div class="flex items-center gap-6">
+                    <a onclick="goToSlide(1)" class="flex items-center gap-3 group text-gray-500 hover:text-primary transition-colors cursor-pointer">
+                        <div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 group-hover:bg-primary/10 flex items-center justify-center transition-colors">
+                            <span class="material-symbols-outlined text-xl">home</span>
+                        </div>
+                        <span class="text-sm font-bold">חזרה לראשי</span>
+                    </a>
+                    <div class="h-8 w-[1px] bg-gray-200 dark:bg-gray-700"></div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm font-bold text-gray-400">שקופית 9 / 9</span>
+                        <div class="h-1.5 w-24 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary w-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="goToSlide(8)" class="flex items-center justify-center gap-2 px-6 h-12 rounded-full text-gray-600 dark:text-gray-300 font-bold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                        <span>חזור אחורה</span>
+                    </button>
+                    <button onclick="goToSlide(1)" class="flex items-center justify-center gap-3 bg-[#131811] dark:bg-primary hover:bg-gray-800 dark:hover:bg-[#4bd122] text-white dark:text-[#131811] text-lg font-bold h-14 px-8 rounded-full transition-all hover:shadow-xl hover:shadow-black/10 dark:hover:shadow-primary/20 transform hover:-translate-y-1">
+                        <span class="material-symbols-outlined text-2xl">replay</span>
+                        <span>התחל מחדש</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 9;
+
+        function goToSlide(slideNumber) {
+            if (slideNumber < 1) slideNumber = 1;
+            if (slideNumber > totalSlides) slideNumber = totalSlides;
+            
+            // Hide all slides
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Show target slide
+            const targetSlide = document.getElementById(`slide-${slideNumber}`);
+            if (targetSlide) {
+                targetSlide.classList.add('active');
+                currentSlide = slideNumber;
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Update URL hash
+                window.location.hash = `slide-${slideNumber}`;
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                goToSlide(currentSlide + 1);
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                goToSlide(currentSlide - 1);
+            } else if (e.key === 'Home') {
+                goToSlide(1);
+            } else if (e.key === 'End') {
+                goToSlide(totalSlides);
+            }
+        });
+
+        // Initialize from URL hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash;
+            if (hash) {
+                const slideMatch = hash.match(/slide-(\d+)/);
+                if (slideMatch) {
+                    goToSlide(parseInt(slideMatch[1]));
+                }
+            } else {
+                goToSlide(1);
+            }
+        });
+
+        // Handle browser back/forward
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash;
+            if (hash) {
+                const slideMatch = hash.match(/slide-(\d+)/);
+                if (slideMatch) {
+                    goToSlide(parseInt(slideMatch[1]));
+                }
+            }
+        });
+    </script>
+</body>
+</html>
