@@ -69,8 +69,80 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes fadeInRotate {
+            from { opacity: 0; transform: rotate(-5deg) scale(0.95); }
+            to { opacity: 1; transform: rotate(0deg) scale(1); }
+        }
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3) translateY(50px); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
         .animate-fade-in-up {
             animation: fadeIn 0.6s ease-out;
+        }
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        .animate-fade-in-scale {
+            animation: fadeInScale 0.7s ease-out;
+        }
+        .animate-fade-in-rotate {
+            animation: fadeInRotate 0.8s ease-out;
+        }
+        .animate-bounce-in {
+            animation: bounceIn 0.9s ease-out;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        .slide.active .animate-on-active {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .slide.active .animate-on-active-delay-1 {
+            animation: fadeIn 0.6s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+        .slide.active .animate-on-active-delay-2 {
+            animation: fadeIn 0.6s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+        .slide.active .animate-on-active-delay-3 {
+            animation: fadeIn 0.6s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+        .slide.active .slide-in-left-on-active {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        .slide.active .slide-in-right-on-active {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        .slide.active .scale-in-on-active {
+            animation: fadeInScale 0.7s ease-out forwards;
         }
     </style>
 </head>
@@ -85,16 +157,16 @@
             </div>
             <div class="w-full lg:w-1/2 h-full flex flex-col justify-center items-center p-8 lg:p-16 relative z-10 bg-background-light dark:bg-background-dark">
                 <div class="mb-8 lg:mb-12 text-center">
-                    <h1 class="text-4xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em] text-[#131811] dark:text-white drop-shadow-sm">
+                    <h1 class="text-4xl lg:text-6xl font-black leading-[1.1] tracking-[-0.033em] text-[#131811] dark:text-white drop-shadow-sm animate-on-active">
                         ג'יין גודול:<br/>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-bl from-primary to-green-600">החברה של הקופים</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-bl from-primary to-green-600 animate-on-active-delay-1">החברה של הקופים</span>
                     </h1>
                 </div>
-                <div class="flex flex-row items-center gap-3 lg:gap-6 animate-fade-in-up flex-wrap justify-center mt-8 lg:mt-12">
+                <div class="flex flex-row items-center gap-3 lg:gap-6 animate-on-active-delay-2 flex-wrap justify-center mt-8 lg:mt-12">
                     <!-- Milly -->
-                    <div class="flex flex-col items-center gap-1">
+                    <div class="flex flex-col items-center gap-1 animate-bounce-in" style="animation-delay: 0.1s;">
                         <div class="relative group cursor-pointer">
-                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500"></div>
+                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500 animate-float"></div>
                             <div class="size-20 lg:size-32 rounded-full bg-white dark:bg-[#1e2e19] border-[3px] border-primary shadow-xl relative flex items-center justify-center overflow-hidden transform transition-transform duration-500 group-hover:scale-105">
                                 <img src="/assets/images/milly.jpg" alt="מילי" class="w-full h-full object-cover rounded-full">
                             </div>
@@ -102,9 +174,9 @@
                         <h2 class="text-base lg:text-lg font-bold text-[#131811] dark:text-white">מילי</h2>
                     </div>
                     <!-- Sol -->
-                    <div class="flex flex-col items-center gap-1">
+                    <div class="flex flex-col items-center gap-1 animate-bounce-in" style="animation-delay: 0.3s;">
                         <div class="relative group cursor-pointer">
-                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500"></div>
+                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500 animate-float" style="animation-delay: 0.5s;"></div>
                             <div class="size-20 lg:size-32 rounded-full bg-white dark:bg-[#1e2e19] border-[3px] border-primary shadow-xl relative flex items-center justify-center overflow-hidden transform transition-transform duration-500 group-hover:scale-105">
                                 <img src="/assets/images/WhatsApp Image 2026-01-15 at 14.21.24.jpeg" alt="סול" class="w-full h-full object-cover rounded-full">
                             </div>
@@ -112,9 +184,9 @@
                         <h2 class="text-base lg:text-lg font-bold text-[#131811] dark:text-white">סול</h2>
                     </div>
                     <!-- Emmy -->
-                    <div class="flex flex-col items-center gap-1">
+                    <div class="flex flex-col items-center gap-1 animate-bounce-in" style="animation-delay: 0.5s;">
                         <div class="relative group cursor-pointer">
-                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500"></div>
+                            <div class="absolute inset-0 bg-primary/20 blur-xl rounded-full group-hover:bg-primary/30 transition-all duration-500 animate-float" style="animation-delay: 1s;"></div>
                             <div class="size-20 lg:size-32 rounded-full bg-white dark:bg-[#1e2e19] border-[3px] border-primary shadow-xl relative flex items-center justify-center overflow-hidden transform transition-transform duration-500 group-hover:scale-105">
                                 <img src="/assets/images/WhatsApp Image 2026-01-15 at 10.48.57.jpeg" alt="אמי" class="w-full h-full object-cover rounded-full">
                             </div>
@@ -151,16 +223,16 @@
             <div class="flex-grow flex w-full relative h-full">
                 <div class="w-1/2 h-full flex flex-col items-center justify-center p-12 md:p-24 relative z-10 bg-white dark:bg-background-dark">
                     <div class="relative z-20 text-center max-w-2xl">
-                        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-[#131811] dark:text-white drop-shadow-sm text-balance mb-6">
+                        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight text-[#131811] dark:text-white drop-shadow-sm text-balance mb-6 slide-in-left-on-active">
                             כשהייתה קטנה, ג'יין אהבה חיות מאוד
                         </h1>
-                        <p class="text-2xl md:text-3xl font-bold text-[#131811] dark:text-white leading-relaxed">
+                        <p class="text-2xl md:text-3xl font-bold text-[#131811] dark:text-white leading-relaxed animate-on-active-delay-1">
                             והחליטה שהיא רוצה ללמוד על הצ'ימפנזים ולהכיר אותם
                         </p>
                     </div>
                 </div>
                 <div class="w-1/2 h-full relative flex items-center justify-center bg-[#1e2e19] dark:bg-[#1f331b] overflow-hidden">
-                    <img src="/assets/images/jane_childhood.png" alt="ג'יין הקטנה עם שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out hover:scale-105">
+                    <img src="/assets/images/jane_childhood.png" alt="ג'יין הקטנה עם שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out hover:scale-105 slide-in-right-on-active animate-float">
                     <div class="absolute inset-0 bg-gradient-to-l from-black/10 to-transparent pointer-events-none"></div>
                 </div>
             </div>
@@ -187,14 +259,14 @@
         <main class="flex-1 flex flex-col w-full h-full relative overflow-hidden pb-24">
             <div class="flex-grow w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div class="relative w-full h-full overflow-hidden group bg-blue-100 flex items-center justify-center">
-                    <img src="/assets/images/Gemini_Generated_Image_xk0nz2xk0nz2xk0n.png" alt="ספינה מגיעה לאי" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[20s] ease-linear group-hover:scale-110">
+                    <img src="/assets/images/Gemini_Generated_Image_xk0nz2xk0nz2xk0n.png" alt="ספינה מגיעה לאי" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[20s] ease-linear group-hover:scale-110 slide-in-left-on-active animate-float">
                     <div class="absolute inset-0 bg-gradient-to-r from-black/5 to-transparent pointer-events-none"></div>
                 </div>
                 <div class="flex flex-col items-center justify-center lg:items-end text-center lg:text-right p-8 lg:p-20 bg-white dark:bg-[#1a2c15]">
                     <div class="flex flex-col gap-8 max-w-xl w-full" dir="rtl">
-                        <h1 class="font-hebrew font-black text-5xl md:text-6xl lg:text-7xl text-[#131811] dark:text-white leading-[1.1] tracking-tight">
+                        <h1 class="font-hebrew font-black text-5xl md:text-6xl lg:text-7xl text-[#131811] dark:text-white leading-[1.1] tracking-tight slide-in-right-on-active">
                             היא נסעה רחוק רחוק,<br/>
-                            <span class="text-transparent bg-clip-text bg-gradient-to-l from-green-600 to-primary">עד לאפריקה!</span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-l from-green-600 to-primary animate-on-active-delay-1">עד לאפריקה!</span>
                         </h1>
                     </div>
                 </div>
@@ -228,24 +300,24 @@
     <div class="slide" id="slide-4">
         <main class="flex-1 flex flex-col md:flex-row relative w-full h-full overflow-hidden pb-24">
             <div class="w-full md:w-1/2 h-full relative flex items-center justify-center bg-[#f4f9f3] dark:bg-[#152210] overflow-hidden group">
-                <img src="/assets/images/Gemini_Generated_Image_hdk4rrhdk4rrhdk4.png" alt="ג'יין מתבוננת" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out group-hover:scale-105">
-                <div class="absolute top-8 right-8 z-20 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-5 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                <img src="/assets/images/Gemini_Generated_Image_hdk4rrhdk4rrhdk4.png" alt="ג'יין מתבוננת" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out group-hover:scale-105 scale-in-on-active animate-float">
+                <div class="absolute top-8 right-8 z-20 bg-white/90 dark:bg-black/60 backdrop-blur-sm px-5 py-2 rounded-full flex items-center gap-2 shadow-lg animate-bounce-in" style="animation-delay: 0.5s;">
                     <span class="material-symbols-outlined text-primary text-base">visibility</span>
                     <span class="text-sm font-bold uppercase tracking-wider text-[#131811] dark:text-white">תצפית</span>
                 </div>
             </div>
             <div class="w-full md:w-1/2 h-full relative flex flex-col justify-center items-center p-8 md:p-16 lg:p-24 bg-[#f4f9f3] dark:bg-[#152210]">
-                <div class="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-                <span class="material-symbols-outlined absolute top-12 left-12 text-primary/10 text-8xl rotate-12 select-none -z-10">eco</span>
+                <div class="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+                <span class="material-symbols-outlined absolute top-12 left-12 text-primary/10 text-8xl rotate-12 select-none -z-10 animate-float">eco</span>
                 <div class="flex flex-col gap-8 max-w-2xl w-full">
-                    <div class="inline-flex self-start items-center justify-center size-16 rounded-full bg-white dark:bg-[#1c2e18] shadow-sm text-primary mb-2 border border-primary/20">
+                    <div class="inline-flex self-start items-center justify-center size-16 rounded-full bg-white dark:bg-[#1c2e18] shadow-sm text-primary mb-2 border border-primary/20 animate-bounce-in">
                         <span class="material-symbols-outlined text-3xl">eyeglasses</span>
                     </div>
-                    <h1 class="hebrew-text text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-[#131811] dark:text-white drop-shadow-sm mb-6">
+                    <h1 class="hebrew-text text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight text-[#131811] dark:text-white drop-shadow-sm mb-6 slide-in-right-on-active">
                         במשך המון זמן,<br/>
-                        <span class="text-[#355e3b] dark:text-[#5bee2b] bg-clip-text">היא רק ישבה והסתכלה</span>
+                        <span class="text-[#355e3b] dark:text-[#5bee2b] bg-clip-text animate-on-active-delay-1">היא רק ישבה והסתכלה</span>
                     </h1>
-                    <p class="hebrew-text text-2xl md:text-3xl font-bold text-[#131811] dark:text-white leading-relaxed">
+                    <p class="hebrew-text text-2xl md:text-3xl font-bold text-[#131811] dark:text-white leading-relaxed animate-on-active-delay-2">
                         והבינה שלצ'ימפנזות יש רגשות ושהם מאוד דומים לנו, בני האדם
                     </p>
                 </div>
@@ -276,20 +348,20 @@
         </div>
         <main class="relative z-10 w-full h-full flex flex-col lg:flex-row pb-24">
             <div class="relative w-full lg:w-1/2 h-[45vh] lg:h-full shrink-0 group overflow-hidden bg-[#1e2e19] dark:bg-[#1f331b] flex items-center justify-center">
-                <img src="/assets/images/Gemini_Generated_Image_q0s4mhq0s4mhq0s4.png" alt="ג'יין עם שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out group-hover:scale-105">
+                <img src="/assets/images/Gemini_Generated_Image_q0s4mhq0s4mhq0s4.png" alt="ג'יין עם שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-[2s] ease-out group-hover:scale-105 slide-in-left-on-active scale-in-on-active">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-transparent lg:to-background-light/5 pointer-events-none"></div>
             </div>
             <div class="relative w-full lg:w-1/2 h-full flex flex-col bg-white/40 dark:bg-[#1a2c15]/40 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none">
                 <div class="flex-1 flex flex-col justify-center items-center lg:items-end text-center lg:text-right px-6 lg:px-16 pt-10">
-                    <span class="material-symbols-outlined text-6xl text-primary/30 mb-4 rotate-180 hidden lg:block">format_quote</span>
-                    <h1 class="font-hebrew font-black text-4xl sm:text-5xl lg:text-[5rem] lg:leading-[1.1] text-slate-900 dark:text-white mb-6 drop-shadow-sm" dir="rtl">
+                    <span class="material-symbols-outlined text-6xl text-primary/30 mb-4 rotate-180 hidden lg:block animate-fade-in-rotate">format_quote</span>
+                    <h1 class="font-hebrew font-black text-4xl sm:text-5xl lg:text-[5rem] lg:leading-[1.1] text-slate-900 dark:text-white mb-6 drop-shadow-sm slide-in-right-on-active" dir="rtl">
                         הקופים הבינו<br class="hidden lg:block"/>
-                        <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600">שהיא חברה טובה</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600 animate-on-active-delay-1">שהיא חברה טובה</span>
                     </h1>
-                    <p class="font-hebrew text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6" dir="rtl">
+                    <p class="font-hebrew text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-6 animate-on-active-delay-2" dir="rtl">
                         הם התחברו מאוד והיא אפילו נתנה להם שמות
                     </p>
-                    <div class="w-20 h-2 bg-primary/40 rounded-full my-4 lg:ml-auto lg:mr-0"></div>
+                    <div class="w-20 h-2 bg-primary/40 rounded-full my-4 lg:ml-auto lg:mr-0 animate-on-active-delay-3" style="animation: fadeInScale 0.6s ease-out 0.6s forwards; opacity: 0;"></div>
                 </div>
             </div>
         </main>
@@ -317,22 +389,22 @@
         <main class="flex-1 flex flex-col md:flex-row w-full h-full px-4 md:px-8 gap-6 md:gap-12 items-center relative z-10 pb-24">
             <div class="w-full md:w-1/2 h-[40vh] md:h-full pb-0 md:pb-6 pt-0 md:pt-4">
                 <div class="relative w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white dark:border-[#1a2c15] group bg-[#1e2e19] dark:bg-[#1f331b] flex items-center justify-center">
-                    <img src="/assets/images/Gemini_Generated_Image_fmuybwfmuybwfmuy.png" alt="שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-1000 group-hover:scale-110">
-                    <div class="absolute top-6 right-6 z-20 bg-white/90 dark:bg-[#1a2c15]/90 backdrop-blur text-[#131811] dark:text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                    <img src="/assets/images/Gemini_Generated_Image_fmuybwfmuybwfmuy.png" alt="שימפנזה" class="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-1000 group-hover:scale-110 scale-in-on-active animate-float">
+                    <div class="absolute top-6 right-6 z-20 bg-white/90 dark:bg-[#1a2c15]/90 backdrop-blur text-[#131811] dark:text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 animate-bounce-in" style="animation-delay: 0.5s;">
                         <span class="material-symbols-outlined text-primary text-2xl">psychology</span>
                         <span class="font-bold text-sm">חכמים מאוד!</span>
                     </div>
                 </div>
             </div>
             <div class="w-full md:w-1/2 flex flex-col justify-center items-start text-right">
-                <div class="inline-flex items-center gap-2 mb-6 animate-bounce">
+                <div class="inline-flex items-center gap-2 mb-6 animate-bounce-in">
                     <span class="px-4 py-2 rounded-full bg-primary/20 text-green-900 dark:text-green-100 text-sm font-extrabold border border-primary/20">
                         עובדה מדהימה #6
                     </span>
                 </div>
-                <h1 class="text-[#131811] dark:text-white text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight drop-shadow-sm">
-                    עם הזמן, היא גילתה שהם <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600">חכמים</span> 
-                    ומשתמשים <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600">בכלים</span> בדיוק כמונו
+                <h1 class="text-[#131811] dark:text-white text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight drop-shadow-sm slide-in-right-on-active">
+                    עם הזמן, היא גילתה שהם <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600 animate-on-active-delay-1">חכמים</span> 
+                    ומשתמשים <span class="text-transparent bg-clip-text bg-gradient-to-br from-primary to-green-600 animate-on-active-delay-2">בכלים</span> בדיוק כמונו
                 </h1>
             </div>
         </main>
@@ -361,22 +433,22 @@
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-gray-200/50 dark:border-gray-700/30 rounded-full -z-20"></div>
             <div class="container mx-auto px-6 md:px-10 lg:px-20 h-full">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center h-full">
-                    <div class="flex flex-col justify-center order-1 text-center lg:text-right z-10 animate-[slideInRight_0.6s_ease-out]">
+                    <div class="flex flex-col justify-center order-1 text-center lg:text-right z-10 slide-in-right-on-active">
                         <div class="mb-6 flex justify-center lg:justify-start">
-                            <div class="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-full text-yellow-600 dark:text-yellow-400 inline-flex">
+                            <div class="bg-yellow-100 dark:bg-yellow-900/30 p-3 rounded-full text-yellow-600 dark:text-yellow-400 inline-flex animate-bounce-in">
                                 <span class="material-symbols-outlined text-4xl">stars</span>
                             </div>
                         </div>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight font-hebrew text-[#131811] dark:text-white drop-shadow-sm mb-6">
-                            ג'יין התייצבה בפני העולם ונאבקה למען <span class="text-primary">הישרדות השימפנזים</span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight font-hebrew text-[#131811] dark:text-white drop-shadow-sm mb-6 animate-on-active">
+                            ג'יין התייצבה בפני העולם ונאבקה למען <span class="text-primary animate-on-active-delay-1">הישרדות השימפנזים</span>
                         </h1>
-                        <p class="text-2xl md:text-3xl lg:text-4xl font-bold font-hebrew text-[#131811] dark:text-white leading-relaxed">
+                        <p class="text-2xl md:text-3xl lg:text-4xl font-bold font-hebrew text-[#131811] dark:text-white leading-relaxed animate-on-active-delay-2">
                             היא נלחמה למניעת <span class="text-primary">הכחדתם</span> והפכה ל<span class="text-primary">שגרירה המסורה</span> שלהם
                         </p>
                     </div>
-                    <div class="flex items-center justify-center order-2 relative h-full max-h-[600px] animate-[fadeIn_0.8s_ease-out]">
+                    <div class="flex items-center justify-center order-2 relative h-full max-h-[600px] scale-in-on-active">
                         <div class="relative w-full h-full flex items-center justify-center">
-                            <img src="/assets/images/Gemini_Generated_Image_ufnf93ufnf93ufnf.png" alt="ג'יין בפני העולם" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl">
+                            <img src="/assets/images/Gemini_Generated_Image_ufnf93ufnf93ufnf.png" alt="ג'יין בפני העולם" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg shadow-2xl animate-float">
                         </div>
                     </div>
                 </div>
@@ -406,10 +478,10 @@
             <div class="w-full max-w-[1280px] flex flex-col gap-6 md:gap-10 h-full justify-center">
                 <div class="bg-white dark:bg-white/5 rounded-xl md:rounded-[2.5rem] shadow-sm overflow-hidden flex flex-col md:flex-row-reverse min-h-[65vh] shadow-xl shadow-black/5">
                     <div class="relative w-full md:w-1/2 h-64 md:h-auto overflow-hidden group flex items-center justify-center bg-[#1e2e19] dark:bg-[#1f331b]">
-                        <img src="/assets/images/Gemini_Generated_Image_nsx11snsx11snsx1.png" alt="ג'יין עם שימפנזים" class="w-full h-full object-cover transition-transform hover:scale-105 duration-1000 ease-out">
+                        <img src="/assets/images/Gemini_Generated_Image_nsx11snsx11snsx1.png" alt="ג'יין עם שימפנזים" class="w-full h-full object-cover transition-transform hover:scale-105 duration-1000 ease-out slide-in-right-on-active scale-in-on-active">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-gradient-to-l md:from-transparent md:to-black/20"></div>
                         <div class="absolute top-4 right-4">
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md text-xs font-bold shadow-sm">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md text-xs font-bold shadow-sm animate-bounce-in" style="animation-delay: 0.5s;">
                                 <span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
                                 <span>Legacy</span>
                             </span>
@@ -417,10 +489,10 @@
                     </div>
                     <div class="flex flex-col justify-center p-6 md:p-12 md:w-1/2 text-center md:text-right">
                         <div class="flex flex-col gap-6 md:items-end w-full">
-                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.2] tracking-tight text-[#131811] dark:text-white max-w-2xl" dir="rtl">
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.2] tracking-tight text-[#131811] dark:text-white max-w-2xl slide-in-left-on-active" dir="rtl">
                                 ג'יין נפטרה בגיל 91 אחרי חיים מלאים בטוב
                             </h1>
-                            <div class="w-24 h-1.5 bg-primary rounded-full mx-auto md:mr-0 md:ml-auto mt-6 mb-8"></div>
+                            <div class="w-24 h-1.5 bg-primary rounded-full mx-auto md:mr-0 md:ml-auto mt-6 mb-8 animate-on-active-delay-1" style="animation: fadeInScale 0.6s ease-out 0.3s forwards; opacity: 0;"></div>
                         </div>
                     </div>
                 </div>
@@ -451,25 +523,25 @@
                     <span class="material-symbols-outlined text-8xl">eco</span>
                 </div>
                 <div class="relative z-10 max-w-2xl">
-                    <div class="inline-flex items-center gap-2 mb-8 bg-primary/10 px-4 py-2 rounded-full text-primary-dark dark:text-primary w-fit border border-primary/20">
+                    <div class="inline-flex items-center gap-2 mb-8 bg-primary/10 px-4 py-2 rounded-full text-primary-dark dark:text-primary w-fit border border-primary/20 animate-bounce-in">
                         <span class="material-symbols-outlined text-xl">verified</span>
                         <span class="text-sm font-bold uppercase tracking-wider">סיום הסיפור</span>
                     </div>
-                    <h1 class="text-5xl lg:text-7xl font-black text-[#131811] dark:text-white leading-[1.1] mb-6 tracking-tight">
-                        גם <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600">אנחנו</span> <br/>
+                    <h1 class="text-5xl lg:text-7xl font-black text-[#131811] dark:text-white leading-[1.1] mb-6 tracking-tight slide-in-left-on-active">
+                        גם <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-green-600 animate-on-active-delay-1">אנחנו</span> <br/>
                         יכולים לשמור <br/>
                         על הטבע!
                     </h1>
-                    <p class="text-xl lg:text-2xl text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-lg">
+                    <p class="text-xl lg:text-2xl text-gray-500 dark:text-gray-400 font-medium leading-relaxed max-w-lg animate-on-active-delay-2">
                         כל אחד מאיתנו יכול לעזור לחיות ולעולם להיות מקום טוב יותר.
                     </p>
                 </div>
             </div>
             <div class="w-1/2 h-full relative bg-[#ecfce6] dark:bg-[#25381e] flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 mix-blend-multiply dark:mix-blend-overlay"></div>
-                <div class="absolute top-1/3 left-1/3 w-96 h-96 bg-primary/30 rounded-full blur-[100px]"></div>
-                <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-green-400/20 rounded-full blur-[80px]"></div>
-                <div class="relative w-[75%] aspect-[4/5] max-w-xl rounded-[3rem] overflow-hidden border-[12px] border-white dark:border-[#1a2815]/50 shadow-2xl transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
+                <div class="absolute top-1/3 left-1/3 w-96 h-96 bg-primary/30 rounded-full blur-[100px] animate-pulse"></div>
+                <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-green-400/20 rounded-full blur-[80px] animate-pulse" style="animation-delay: 0.5s;"></div>
+                <div class="relative w-[75%] aspect-[4/5] max-w-xl rounded-[3rem] overflow-hidden border-[12px] border-white dark:border-[#1a2815]/50 shadow-2xl transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700 scale-in-on-active animate-float">
                     <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-110" data-alt="Illustration of a child planting a tree or happy children in nature" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNytbE-TWH31A6GNRolavHno0ItW6NVomg99YHp5he9yVpGlyrEcELilj9dRUVTQfDeoNDkGD347WgsBRkU4lrpxxoacf_KxJVqnFFI14Njm6Erx8M8uZdujPZVsydpyOTx-EGT0vp8zbQ9SLGcQfFMQ1iZ4X6F-hF66_JY4iQ7ptajQkm4XtnlyhRwBJSZS_Xx5U7lLo_JLPNhDpdp7u173sDdQjagAmns4gOzxR-zXXvGPPnmgRPhq6FnPROezckWsGyacKG_DQ');">
                     </div>
                     <div class="absolute bottom-8 right-8 left-8 bg-white/95 dark:bg-[#1a2815]/95 backdrop-blur-xl p-6 rounded-3xl shadow-lg border border-white/20">
@@ -514,12 +586,28 @@
             // Hide all slides
             document.querySelectorAll('.slide').forEach(slide => {
                 slide.classList.remove('active');
+                // Reset animations by removing and re-adding animation classes
+                const animatedElements = slide.querySelectorAll('[class*="animate-"], [class*="slide-in"], [class*="scale-in"]');
+                animatedElements.forEach(el => {
+                    const classes = Array.from(el.classList);
+                    classes.forEach(cls => {
+                        if (cls.includes('animate-') || cls.includes('slide-in') || cls.includes('scale-in')) {
+                            el.classList.remove(cls);
+                            // Force reflow
+                            void el.offsetWidth;
+                            el.classList.add(cls);
+                        }
+                    });
+                });
             });
             
             // Show target slide
             const targetSlide = document.getElementById(`slide-${slideNumber}`);
             if (targetSlide) {
-                targetSlide.classList.add('active');
+                // Small delay to ensure animations trigger
+                setTimeout(() => {
+                    targetSlide.classList.add('active');
+                }, 10);
                 currentSlide = slideNumber;
                 
                 // Scroll to top
